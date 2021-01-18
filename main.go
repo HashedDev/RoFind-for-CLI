@@ -117,7 +117,7 @@ RESTART:
 func discordwebhook(groupinfo *GroupInfo) {
 	http.DefaultTransport = &http.Transport{}
 	embed := godiscord.NewEmbed("RoFind found a unclaimed group!", "", fmt.Sprintf("https://www.roblox.com/groups/%d", groupinfo.ID))
-	embed.SetAuthor("RoFind for Linux", "", "https://i.imgur.com/B7BPUl3.png")
+	embed.SetAuthor("RoFind for CLI", "", "https://i.imgur.com/B7BPUl3.png")
     embed.SetColor("#2ECC71")
 	embed.AddField("Name", strings.Title(groupinfo.Name), false)
 	embed.AddField("ID", fmt.Sprintf("%d", groupinfo.ID), true)
