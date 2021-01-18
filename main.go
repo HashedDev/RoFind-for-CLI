@@ -98,7 +98,7 @@ RESTART:
 			if groupinfo.PublicEntryAllowed == true {
 				valid++
 				c := color.New(color.FgHiGreen).Add(color.Underline).Add(color.Bold)
-				c.Printf("Group: %d is claimable! | Members: %d | https://www.roblox.com/groups/%d\n", groupinfo.ID, groupinfo.MemberCount, groupinfo.ID)
+				c.Printf("Group Name: %d | Group ID: %d | Members: %d | https://www.roblox.com/groups/%d\n", groupinfo.Name, groupinfo.ID, groupinfo.MemberCount, groupinfo.ID)
 				resultfile, err := os.OpenFile("Config/results.txt", os.O_APPEND|os.O_WRONLY, 0644)
 				if err != nil {
 					fmt.Println(err)
