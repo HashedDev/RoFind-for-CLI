@@ -21,5 +21,5 @@ Type `go build` and to start `./main` or `go run main.go`.
 ### Pros
 1. It works on any operating system with GoLang installed.
 ### Cons
-1. Webhooks might no send.
+1. Webhooks might not send.
 2. There are no statistics.
